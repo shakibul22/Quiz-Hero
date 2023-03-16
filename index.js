@@ -77,7 +77,6 @@ const displayQuiz = (quizData) => {
 
 // EventListener for quiz submit button
 document.querySelector("#submit").addEventListener ("click", () => {
-  console.log('click')
   if (answers.length < 6) {
     return;
   }
@@ -111,10 +110,11 @@ document.querySelector("#submit").addEventListener ("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
+
       JSON.stringify([
         ...storage,
         {
@@ -139,7 +139,9 @@ document.querySelector("#submit").addEventListener ("click", () => {
 
   // Right side bar/ answer section
   let x = setTimeout(() => {
+
     showAnswers(answers);
+
     displayResult.innerHTML = `<div
     class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
   >
@@ -185,3 +187,4 @@ document.querySelector("#submit").addEventListener ("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
