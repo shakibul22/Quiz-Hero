@@ -46,9 +46,8 @@
             Get ready to Quiz and be amazed!
           </p>
         </div>
-        <button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio"   class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white" type="button">Blog <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-
-        <!-- <div class="flex-none gap-2">
+  
+        <div class="flex-none gap-2">
           <div class="dropdown dropdown-end">
               <div class="dropdown dropdown-open">
                 <button
@@ -56,7 +55,7 @@
               >Blog</button>
               </div>
           </div>
-      </div> -->
+      </div>
       </nav>
     </header>
     <!-- Header/Navbar section end -->
@@ -174,26 +173,32 @@
     <section id="blogs">
 
       <div class="question-container">
-          <!-- 1st question -->
-          <div class="question">
-             
-          </div>
-          
-          
-      </div>
-      <div id="dropdownDefaultRadio" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
-        <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioButton">
-          <li>
-            <div class="flex items-center">
-                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
-            </div>
-          </li>
-         
-        </ul>
+        <!-- 1st question -->
+        <div class="question">
+            <h2>What is the difference between map,filter,forEach and find?</h2>
+            <p> map and filter both create new arrays, but forEach does not create a new array, and find returns a single element rather than an array.  </p>
+        </div>
+        
+        <!-- 2nd  question -->
+        <div class="question">
+            <h2>What is the difference between Local storage, Section storage ange Cookies?</h2>
+            <p> LocalStorage and SessionStorage are more secure than cookies, have larger storage limits, and offer more control over data scope and lifetime. Cookies are useful for sending data to the server with every request and have broader support across different browsers.LocalStorage stores data with no expiration date and data persists even after the browser is closed.SessionStorage stores data for one session (or one visit to the website).Cookies can have an expiration date or be set to expire when the browser session ends.  </p>       
+        </div>
+        
+        <!-- 3rd  question -->
+        <div class="question">
+            <h2>What is event Loop? And how does it work?</h2>
+            <p> The event loop is a key feature of the JavaScript runtime environment that allows it to handle asynchronous operations and maintain a responsive user interface. It works by continuously checking the call stack and the task queue and executing tasks in the appropriate order.</p>
+        </div>
+        
+        <!-- 4th question -->
+        <div class="question">
+            <h2>How does quizTimer and chooseQuiz work?</h2>
+            <p> chooseQuiz takes two arguments: quizzes is an array of quiz objects, and onSelect is a callback function that is called when the user selects a quiz. The function creates an unordered list element (quizList) and populates it with list items (quizItem) for each quiz in the quizzes array. The quizItem elements have a click event listener that calls the onSelect function with the corresponding quiz object when clicked. Finally, the quizList is appended to the body element of the HTML document.</p>
+        </div>
     </div>
-
   </section>
+
     <!-- Quiz section end -->
 
     <!-- Countdown section start -->
